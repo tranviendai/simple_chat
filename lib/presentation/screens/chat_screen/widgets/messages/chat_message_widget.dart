@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,9 +31,25 @@ class ChatMessageWidget extends StatelessWidget {
                     bottomRight: Radius.circular(20),
                   ),
                 ),
-                child: Text(
-                  data.content,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.white),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 10,
+                  children: [
+                    if (data.imagePath != null)
+                      ClipRRect(
+                        borderRadius: BorderRadiusGeometry.circular(8),
+                        child: Image.file(
+                          File(data.imagePath!),
+                          height: 246.h,
+                          fit: BoxFit.cover,
+                          width: 246.w,
+                        ),
+                      ),
+                    Text(
+                      data.content,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.white),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -60,7 +78,6 @@ class ChatMessageWidget extends StatelessWidget {
               ),
               if (data.response != null)
                 AnimatedTextKit(
-                  key: ValueKey('${data.response!.response}-${data.timestamp}-${data.content}'),
                   isRepeatingAnimation: false,
                   animatedTexts: [
                     TypewriterAnimatedText(

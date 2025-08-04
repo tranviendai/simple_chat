@@ -7,7 +7,7 @@ import 'package:simple_chat_demo/presentation/screens/chat_screen/cubit/message/
 class MessageCubit extends Cubit<MessageState> {
   MessageCubit() : super(MessageInitial());
 
-  Future<void> addMessage({required String content}) async {
+  Future<void> addMessage({required String content, String? imagePath}) async {
     emit(MessageInProgress());
     try {
       emit(
@@ -15,6 +15,7 @@ class MessageCubit extends Cubit<MessageState> {
           data: ChatModel(
             content: content,
             timestamp: DateTime.now(),
+            imagePath: imagePath,
             // .subtract(Duration(days: randomDay())), //-> random lastMonth or lastYear
           ),
         ),

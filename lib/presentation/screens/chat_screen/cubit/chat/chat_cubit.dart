@@ -30,7 +30,7 @@ class ChatCubit extends Cubit<List<ChatModel>> {
     final index = updatedChats.indexWhere((chat) => chat.timestamp == data.timestamp);
 
     if (index != -1) {
-      final updatedChat = data.copyWith(content: content, response: getRandomResponse());
+      final updatedChat = data.copyWith(content: content);
       updatedChats[index] = updatedChat;
 
       emit(updatedChats);

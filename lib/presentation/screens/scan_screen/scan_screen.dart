@@ -100,7 +100,16 @@ class _ScanScreenState extends State<ScanScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleIconButton(icon: IconsaxPlusBold.image, onPressed: () {}),
+                CircleIconButton(
+                  icon: IconsaxPlusBold.image,
+                  onPressed: () {
+                    context.read<ScanCubit>().getImage().then((val) {
+                      if (val) {
+                        context.pop();
+                      }
+                    });
+                  },
+                ),
                 InkWell(
                   onTap: () {
                     final controller = _cameraService.controller;
