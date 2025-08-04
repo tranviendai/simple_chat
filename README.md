@@ -8,4 +8,4 @@ Follow these steps to run the project:
 
 # Introduction Video
 ## Watch a brief video introduction of the app here:
-[![Watch the video](https://img.youtube.com/vi/0/maxresdefault.jpg)](https://www.youtube.com/shorts/OnHJIcEiN9M)
+[![Watch the video]](https://www.youtube.com/shorts/OnHJIcEiN9M)
