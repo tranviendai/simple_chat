@@ -8,8 +8,4 @@ Follow these steps to run the project:
 
 # Introduction Video
 ## Watch a brief video introduction of the app here: [https://www.youtube.com/shorts/OnHJIcEiN9M]
-<p align="center">
-  <a href="https://www.youtube.com/shorts/OnHJIcEiN9M" target="_blank">
-    <img src="https://img.youtube.com/vi/0/maxresdefault.jpg" alt="Video giới thiệu" style="width:100%;max-width:640px;">
-  </a>
-</p>
+<iframe width="560" height="315" src="https://www.youtube.com/shorts/OnHJIcEiN9M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
