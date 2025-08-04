@@ -7,6 +7,5 @@ Follow these steps to run the project:
 4. Run the application: fvm flutter run
 
 # Introduction Video
-## Watch a brief video introduction of the app here: [https://www.youtube.com/shorts/OnHJIcEiN9M]
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QnHJlcEIN9M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+## Watch a brief video introduction of the app here:
+[![Watch the video](https://img.youtube.com/vi/0/maxresdefault.jpg)](https://www.youtube.com/shorts/OnHJIcEiN9M)
