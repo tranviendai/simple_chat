@@ -1,16 +1,16 @@
-# simple_chat_demo
+# Simple Chat UI
+## This is a basic chat UI application developed in one day, with the following features:
+1. Send text messages and images from the gallery or camera.
+2. Chat with a chatbot that can help debug Flutter apps and answer general questions.
+3. Manage conversations: rename or delete a chat.
+4. Select an AI model (Auto, Claude, Gemini Pro).
 
-A new Flutter project.
+# Getting Started
+## Follow these steps to run the project:
+1. git clone [https://github.com/tranviendai/simple_chat.git]
+2. Use FVM: fvm use (current version is 3.32.8)
+3. After FVM is installed, please restart your IDE.
+4. Run the application: fvm flutter run
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Introduction Video
+## Watch a brief video introduction of the app here: [https://www.youtube.com/shorts/OnHJIcEiN9M]
